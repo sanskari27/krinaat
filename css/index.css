@@ -1,0 +1,13 @@
+:root {
+    --dark: #0E2431;
+    --primary: #FC3A52;
+    --accent: #F9B248;
+    --light: #E8D5B7;
+    --text: #fff;
+  }
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+}
