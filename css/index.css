@@ -223,6 +223,7 @@ p{
   display: flex;
   align-items: center;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .right-arrow{
@@ -342,6 +343,7 @@ p{
   display: flex;
   align-items: center;
   border-radius: 10px;
+  cursor: pointer;
 }
 .feature-title{
   margin-top: 15%;
