@@ -2,7 +2,7 @@
   --dark: #0e2431;
   --primary: #fc3a52;
   --accent: #f9b248;
-  --light: #e8d5b7;
+  --light: #FFF1DB;
   --text: #e5e5e5;
 }
 html {
@@ -30,7 +30,6 @@ h5{
   font-weight: 600;
   letter-spacing: 1px;
   line-height: 1.1;
-  color: var(--accent);
   font-family: "Montserrat";
 }
 h6{
@@ -360,35 +359,120 @@ p{
   top: 165%;
   width: 30%;
 }
-
-.get-con{
-  position: relative;
-  margin: 250px 250px;
+/* ----------------------------------------------------------------Relation--------------------------------------------------------------- */
+.relation{
+  padding: 7% 10% 2% 20%;
 }
-
-.get-con-text{
-  padding: 7%;
+.relation-header p{
+  margin-top: 40px;
+  width: 60%;
 }
-
-.inf1{
-  background-color: #FFF1DB;
-  height: 170px;
-  text-align: center;
-  margin-top: 20px;
+.relation-expand-wrapper{
+  display: flex;
+  align-items: center;
+}
+.relation-title{
+  display: flex;
+  align-items: center;
+}
+.relation-title div{
+  display: inline-block;
+  margin-left: 20px;
+}
+.relation-expand{
+  height: 60%;
+}
+.relation-card{
+  height: 90px;
+  margin: 15px 0;
+  padding: 10px 10px;
+  background-color: var(--light);
+  display: flex;
+  align-items: center;
   border-radius: 20px;
-  padding: 20% 35% 0%;
-  box-shadow:  0 0 20px #373b3d57;
-  backdrop-filter: blur(25px);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+}
+.relation-card img{
+  height: 40px;
+  width: 40px;
+  margin: 0 5px;
+}
+.relation-card  .gps{
+  height: 30px;
+  width: 30px;
+  margin: 0 5px;
 }
 
-.det{
+.relation-card div{
+  margin-left: 10px;
+}
+#hr-1{
+  width: 100px;
+  border: none;
+  height: 3px;
+  background: #C4C4C4;
+  margin-bottom: 10px;
+  text-align:left;
+  margin-left:0;
+  border-radius: 20px;
+}
+#hr-2{
+  width: 70px;
+  border: none;
+  height: 3px;
+  background: #A6A6A6;
+  margin-bottom: 20px;
+  text-align:left;
+  margin-left:0;
+  border-radius: 20px;
+}
+.card-influencer{
+  background-color: var(--light);
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+  height: 180px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+}
+.card-influencer > img{
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  top: -75px;
+  left: 33%;
+  margin: 0;
+}
+.card-influencer h5{
+  margin-top: 75px;
+  font-weight: 600;
+}
+.card-likes{
   background-color: #fff;
-  height: 320px;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 15px;
+  height: 250px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+}
+.card-likes .heart{
+  margin-top: 40px;
+}
+.card-likes h5{
+  margin-top: 20px;
+}
+.card-likes span{
+  color: #14EB1C;
+}
+.relation .red-circle{
+  position: absolute;
+  right: 10%;
+  top: 260%;
+  z-index: -1;
+  
 }
 
-.get-con-chain{
-  padding-right: 25%;
-}
+
 
 
 /*-------------------------------------------------- Media Query--------------------------------------- */
@@ -574,5 +658,35 @@ p{
     right: -10%;
     width: 80%;
     top: 300%;
+  }
+  .relation{
+    padding: 7% 5%;
+  }
+  .relation-header{
+    text-align: center;
+  }
+  .relation-header p{
+    text-align: center;
+    width: 100%;
+    padding: 10%;
+    margin-top: 25px;
+  }
+  .relation-title{
+    justify-content: center;
+  }
+  .relation-expand{
+    width: 70%;
+    margin: 0 15%;
+  }
+  .card-likes{
+    margin-left: 30px;
+  }
+  }
+  .card-influencer{
+    margin-top: 100px;
+    margin-left: 30px;
+  }
+  .card-influencer > img{
+    top: 10px;
   }
 }
