@@ -268,7 +268,6 @@ p{
   }
   
 }
-
 @keyframes grp-2-anim {
   0% {
     transform: translate(0,0);
@@ -301,7 +300,7 @@ p{
 
 #features{  
   margin-top: 2%;
-  padding: 0% 20%;
+  padding: 0% 20% 5%;
 }
 .feature-card-wrapper{
   padding: 0 15px;
@@ -363,7 +362,7 @@ p{
 }
 /* ----------------------------------------------------------------Relation--------------------------------------------------------------- */
 .relation{
-  padding: 7% 15% 2%;
+  padding: 7% 15% 3%;
 }
 .relation-header p{
   margin-top: 40px;
@@ -439,13 +438,12 @@ p{
 .card-influencer > img{
   height: 150px;
   width: 150px;
-  position: absolute;
+  position: relative;
   top: -75px;
-  left: 33%;
   margin: 0;
 }
 .card-influencer h5{
-  margin-top: 75px;
+  margin-top: -65px;
   font-weight: 600;
 }
 .card-likes{
@@ -474,8 +472,71 @@ p{
   
 }
 
+/* ----------------------------------------------------------------Plan--------------------------------------------------------------- */
+#plan{
+  margin-top: 10%;
+  padding: 0 10%;
+}
+#plan .blue-circle{
+  position: absolute;
+  left: -2%;
+  margin-top: -10%;
+}
+#plan .yellow-circle{  
+  position: absolute;
+  right: -12%;
+  margin-top: 5%;
+}
+#plan .green-circle{
+  position: absolute;
+  left: -10%;
+  margin-top: 26%;
 
-
+}
+#plan .red-circle{
+  position: absolute;
+  right: 10%;
+  margin-top: 36%;
+}
+#plan h2{
+  text-align: center;
+}
+#plan > p{
+  text-align: center;
+  margin-bottom: 70px;
+}
+.plan-card{
+  height: fit-content;
+  padding: 20px 20px 70px;
+  margin: 10px;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.plan-header{
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+  border-radius: 15px;
+  margin-bottom: 35px;
+}
+.plan-card:nth-child(1) .plan-header{  
+  background-color: #D672F9;
+}
+.plan-card:nth-child(2) .plan-header{  
+  background-color: #86EA9C;
+}
+.plan-card:nth-child(3) .plan-header{  
+  background-color: #6BC1F1;
+}
+.plan-detail{
+  text-align: left;
+  margin-top: 10px;
+}
+.plan-detail > img{
+  width: 25px;
+  height: 25px;
+}
 
 /*-------------------------------------------------- Media Query--------------------------------------- */
 @media only screen and (max-width: 992px) {
@@ -683,7 +744,10 @@ p{
   .card-influencer{
     margin-top: 100px;
   }
-  .card-influencer > img{
-    top: 10px;
+}
+
+@media only screen and (max-width: 768){
+  #plan{
+    visibility: hidden;
   }
 }
