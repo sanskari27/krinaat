@@ -571,6 +571,9 @@ p{
   .navbar-nav{
     margin-top: 20px;
   }
+  .cart {
+    width: auto;
+}
   h1{
     font-weight: 600;
     line-height: 1.1;
