@@ -702,6 +702,7 @@ footer{
   border-radius: 10px;
   color: #000;
   outline: none;
+  border: none;
 }
 #message{
   display: block;
@@ -714,6 +715,7 @@ footer{
   resize: none;
   color: #000;
   outline: none;
+  border: none;
 }
 #send-msg{
   display: block;
