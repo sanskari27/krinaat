@@ -2,7 +2,7 @@
 
 if (window.location.hostname == "krinaat-web.web.app" || 
     window.location.hostname == "krinaat-web.firebaseapp.com") {
-       window.location.href = 'http://krinaat.com'; 
+       window.location.href = 'https://krinaat.com'; 
 }
 
 let docName = document.title;
