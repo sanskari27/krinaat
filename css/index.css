@@ -407,8 +407,11 @@ p{
 .relation-card div{
   margin-left: 10px;
 }
+.relation-card > div{
+  width: 60%;
+}
 #hr-1{
-  width: 100px;
+  width: 100%;
   border: none;
   height: 3px;
   background: #C4C4C4;
@@ -418,7 +421,7 @@ p{
   border-radius: 20px;
 }
 #hr-2{
-  width: 70px;
+  width: 80%;
   border: none;
   height: 3px;
   background: #A6A6A6;
@@ -507,11 +510,11 @@ p{
 }
 .plan-card{
   height: fit-content;
-  padding: 20px 20px 70px;
-  margin: 10px;
+  padding: 20px 20px 0;
+  margin: 30px 10px;
   border-radius: 15px;
   background-color: #fff;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
 }
 .plan-header{
   text-align: center;
@@ -520,22 +523,35 @@ p{
   border-radius: 15px;
   margin-bottom: 35px;
 }
-.plan-card:nth-child(1) .plan-header{  
+.plan-card:nth-child(1) .plan-header ,.plan-card:nth-child(1)  .plan-price{  
   background-color: #D672F9;
 }
-.plan-card:nth-child(2) .plan-header{  
+.plan-card:nth-child(2) .plan-header ,.plan-card:nth-child(2) .plan-price{  
   background-color: #86EA9C;
 }
-.plan-card:nth-child(3) .plan-header{  
+.plan-card:nth-child(3) .plan-header ,.plan-card:nth-child(3) .plan-price{  
   background-color: #6BC1F1;
 }
 .plan-detail{
   text-align: left;
   margin-top: 10px;
 }
+.plan-detail:last-of-type{
+  margin-bottom: 40px;
+}
 .plan-detail > img{
   width: 25px;
   height: 25px;
+}
+.plan-price{
+  position: relative;
+  bottom: -20px;
+  width: 60%;
+  text-align: center;
+  padding: 7px;
+  margin: 0 auto;
+  color: #fff;
+  border-radius: 20px;
 }
 
 /*-------------------------------------------------- Media Query--------------------------------------- */
