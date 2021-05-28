@@ -1,5 +1,10 @@
 //jshint esversion:6
 
+if (window.location.hostname == "krinaat-web.web.app" || 
+    window.location.hostname == "krinaat-web.firebaseapp.com") {
+       window.location.href = 'http://krinaat.com'; 
+}
+
 let docName = document.title;
 if(docName.indexOf("Home") !=-1){
     $nav = $(".nav-item");
