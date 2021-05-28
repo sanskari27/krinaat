@@ -68,7 +68,7 @@ p{
   margin: 10px 2% 0%;
   width: 96%;
   box-shadow: inset 0 0 2000px rgba(220, 220, 220, 0.5);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
   border-radius: 15px;
   z-index: 9999;
 }
@@ -253,10 +253,10 @@ p{
 }
 #get-started-btn{
   background-color: var(--primary);
-  width: 50%;
+  width: 200px;
   margin-top: 30px;
   margin-left: 10px;
-  padding: 10px 25px;
+  padding: 10px 10px 10px 25px;
   color: #fff;
   display: flex;
   align-items: center;
@@ -370,9 +370,9 @@ p{
 
 #explore-now-btn{
   background-color: var(--primary);
-  width: 60%;
+  width: 230px;
   margin-top: 30px;
-  padding: 10px 25px;
+  padding: 10px 10px 10px 25px;
   color: #fff;
   display: flex;
   align-items: center;
@@ -439,16 +439,18 @@ p{
   height: 30px;
   width: 30px;
   margin: 0 5px;
+  position: absolute;
+  right: 0;
 }
 
 .relation-card div{
   margin-left: 10px;
 }
 .relation-card > div{
-  width: 60%;
+  width: 75%;
 }
 #hr-1{
-  width: 100%;
+  width: 75%;
   border: none;
   height: 3px;
   background: #C4C4C4;
@@ -458,7 +460,7 @@ p{
   border-radius: 20px;
 }
 #hr-2{
-  width: 80%;
+  width: 55%;
   border: none;
   height: 3px;
   background: #A6A6A6;
@@ -628,7 +630,9 @@ p{
   top: -25px;
 }
 /*-------------------------------------------------- Media Query--------------------------------------- */
-@media only screen and (max-width: 992px) {
+
+
+@media only screen and (max-width: 768px) {
   
   .nav-item {
     margin: auto;
@@ -642,7 +646,7 @@ p{
   }
   .cart {
     width: auto;
-}
+  }
   h1{
     font-weight: 600;
     line-height: 1.1;
@@ -796,7 +800,11 @@ p{
     top: 0;
   }
   #explore-now-btn{
-    width: 75%;
+    width: 220px;
+    margin: 30px auto 0;
+  }
+  #get-started-btn{
+    width: 220px;
     margin: 30px auto 0;
   }
   #card-digital-advertising{
@@ -836,10 +844,259 @@ p{
   .card-influencer{
     margin-top: 100px;
   }
-}
-
-@media only screen and (max-width: 768px){
   #plan{
     display: none;
   }
+  .testimonial .testimonial-card{
+    background-color: #fff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.20);
+    margin: 45px auto 0;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+  }
+  .testimonial .yellow-circle{  
+    position: absolute;
+    left: -70%;
+    margin-top: 5%;
+    z-index: -1;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .nav-item {
+    margin: auto;
+    text-align: center;
+  }
+  .nav-item:nth-child(5) {
+    margin: auto;
+  }
+  .navbar-nav{
+    margin-top: 20px;
+  }
+  .cart {
+    width: auto;
+  }
+  h1{
+    font-weight: 600;
+    line-height: 1.1;
+  }
+  h5{
+    font-weight: 400;
+    line-height: 1.1;
+  }
+  #home .red-circle{
+    left: -30px;
+    top: 30px;
+    width: 60%;
+  }
+  #home .green-circle{
+    left: -60px;
+    width: 70%;
+  }
+  #home .yellow-circle{
+    right: 0;
+    top: 50px;
+    width: 70%;
+  }
+  #home .blue-circle{
+    right: 0;
+    top: 85%;
+    width: 80%;
+  } 
+  .home-wrapper{
+    padding-top: 20%;
+    padding-bottom: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
+    width: 100%;
+    text-align: center;
+  }
+  #home .home-image-wrapper{
+    padding: 4% 0;
+    width: 100%;
+  }
+  #home .home-image{
+    padding-top: 2%;
+    padding-left: 18%;
+    padding-right: 15%;
+    width: 100%;
+  }
+  #get-started-btn{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #home .right-1{
+    visibility: hidden;
+  }
+  #home .right-2{
+    position: absolute;
+    left:70%;
+    top: 130px;
+  }
+  #home .right-3{
+    position: absolute;
+    right: 0;
+    top: 55%;
+  }
+  #home .right-4{
+    position: absolute;
+    left:40px;
+    top: 65%;  
+    bottom: 0;
+  }
+  #home .right-5{
+    visibility: hidden;
+  }
+
+  #home .left-1{
+    visibility: hidden;
+  }
+  #home .left-2{
+    position: absolute;
+    left:-20px;
+    top: 150px;
+    animation: grp-2-anim 16s linear 0.5s infinite  both;
+  }
+  #home .left-3{
+    position: absolute;
+    right:32%;
+    top: 50px;
+    animation: none;
+  }
+  #home .left-4{
+    visibility: hidden;
+  }
+  #home .left-5{
+    visibility: hidden;
+  }
+  #home .left-6{
+    position: absolute;
+    left:30%;
+    top: 115%;
+    width: 40px;
+    z-index: -1;
+  }
+  #home .left-7{
+    visibility: hidden;
+  }
+  #home .left-8{
+    position: absolute;
+    right:5%;
+    bottom: 0px;
+    top: 105%;
+    width: 30px;
+    animation: grp-2-anim 30s linear 0.5s infinite  both;
+  }
+
+  @keyframes grp-1-anim {
+    0% {
+      transform: translate(0,0);
+    }
+    16% {
+      transform: translate(-10px,-15px);
+    }
+    32% {
+      transform: translate(-30px,-5px);
+    }
+    48% {
+      transform: translate(-10px,10px);
+    }
+    64% {
+      transform: translate(-5px,20px);
+    }
+    80% {
+      transform: translate(-10px,10px);
+    }
+    96% {
+      transform: translate(-5px,5px);
+    }
+    100% {
+      transform: translate(0,0);
+    }
+  }
+
+  #features{  
+    margin-top: 2%;
+    padding: 0% 10% 5%;
+  }
+
+  .feature-title{
+    margin-top: 10%;
+    margin-bottom: 50px;
+    text-align: center;
+    padding-left: 0;
+    position: relative;
+    top: 0;
+  }
+  #explore-now-btn{
+    width: 220px;
+    margin: 30px auto 0;
+  }
+  #get-started-btn{
+    width: 220px;
+    margin: 30px auto 0;
+  }
+  #card-digital-advertising{
+    margin-top: 0;
+  }
+  #features .yellow-circle{
+    position: absolute;
+    left: -50%;
+    width: 80%;
+    
+  }
+  #features .blue-circle{
+    position: absolute;
+    right: 0;
+    width: 80%;
+    top: 300%;
+  }
+  .relation{
+    padding: 7% 5%;
+  }
+  .relation-card{
+    margin-left: 15px;
+  }
+  .relation-header{
+    text-align: center;
+  }
+  .relation-header p{
+    text-align: center;
+    width: 100%;
+    padding: 10%;
+    margin-top: 25px;
+  }
+  .relation-title{
+    justify-content: center;
+  }
+  .relation-expand{
+    width: 70%;
+    margin: 0 15%;
+  }
+  .card-influencer{
+    margin: 100px auto 0;
+  }
+  .card-likes{
+    margin: 40px auto 0;
+  }
+  #plan{
+    display: none;
+  }
+  .testimonial .testimonial-card{
+    background-color: #fff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.20);
+    margin: 8% 10px 0;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+  }
+  .testimonial .yellow-circle{  
+    position: absolute;
+    left: -70%;
+    margin-top: 5%;
+    z-index: -1;
+  }
+
 }

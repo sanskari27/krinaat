@@ -1,5 +1,7 @@
 //jshint esversion:6
 
+let docName = document.title;
+if(docName === )
 
 $(".nav-item").mouseenter(function () { 
     let isActive = $(this).hasClass("nav-active");
@@ -8,11 +10,4 @@ $(".nav-item").mouseenter(function () {
         $(this).addClass("dot");
 }).mouseleave(function () { 
     $(this).removeClass("dot");
-}).click(function (e) { 
-    let isCart = $(this).hasClass("cart");
-    if( !isCart){
-        $(".nav-item").removeClass("nav-active");
-        $(this).addClass("nav-active");
-        $(this).removeClass("dot");
-    }
 });
