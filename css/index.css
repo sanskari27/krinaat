@@ -359,6 +359,9 @@ p{
 .feature-card .feature-header{
   margin: 20px;
 }
+.feature-card p{
+  font-weight: 200;
+}
 .card-img{
   width: 40%;
   margin: 0 auto;
@@ -585,6 +588,7 @@ p{
 .plan-detail > img{
   width: 25px;
   height: 25px;
+  margin-right: 10px;
 }
 .plan-price{
   position: relative;
@@ -605,8 +609,8 @@ p{
 .testimonial .yellow-circle{  
   position: absolute;
   left: -30%;
-  margin-top: 5%;
-  z-index: -1;
+  margin-top: -5%;
+  z-index: 1;
 }
 .testimonial h2{
   text-align: center;
@@ -614,8 +618,9 @@ p{
 .testimonial .testimonial-card{
   background-color: #fff;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.20);
-  margin: 10% 10px 0;
-  padding: 15px;
+  margin: 5% 10px 0;
+  height: 220px;
+  padding: 15px 15px 5px;
   border-radius: 15px;
   text-align: center;
 }
@@ -625,10 +630,88 @@ p{
   position: relative;
   top: -45px;
 }
-.testimonial-card p{
+.testimonial-card h5{
   position: relative;
   top: -25px;
 }
+.testimonial-card h6{
+  color: var(--accent);
+  font-weight: 400;
+  position: relative;
+  top: -25px;
+}
+.testimonial-card p{
+  position: relative;
+  top: -15px;
+  padding: 10px 15px 0;
+  font-weight: 200;
+}
+
+
+/*-------------------------------------------------- Footer--------------------------------------- */
+footer{
+  background-color: var(--dark);
+  margin-top: 70px;
+  padding: 2% 10% 3%;
+  color: #fff;
+}
+.footer-wrapper{
+  z-index: 2;
+}
+.footer-wrapper > h4:nth-child(1) {
+  margin: 30px 0;
+}
+.footer-links a img{
+  height: 30px;
+  width: 30px;
+  margin-bottom: 30px;
+}
+.footer-links > a{
+  margin-right: 20px;
+  cursor:pointer;
+}
+.footer-wrapper > a {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  
+}
+.contact-msg-wrapper > h4{
+  margin: 30px 0;
+}
+#email{
+  display: block;
+  font-weight: 300;
+  width: 80%;
+  height: 40px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  color: #000;
+  outline: none;
+}
+#message{
+  display: block;
+  font-weight: 300;
+  width: 80%;
+  height: 150px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  resize: none;
+  color: #000;
+  outline: none;
+}
+#send-msg{
+  display: block;
+  border-radius: 15px;
+  padding: 10px 20px;
+  width: 30%;
+  background-color: var(--accent);
+  color: #fff;
+  font-weight: 500;
+}
+
 /*-------------------------------------------------- Media Query--------------------------------------- */
 
 
@@ -860,6 +943,38 @@ p{
     left: -70%;
     margin-top: 5%;
     z-index: -1;
+  }
+
+  footer{
+    margin-top: 70px;
+    text-align: center;
+    
+  }
+  
+  #email{
+    width: 60%;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #message{    
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    resize: none;
+    color: #000;
+    outline: none;
+  }
+  #send-msg{    
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--accent);
+    color: #fff;
+    font-weight: 500;
   }
 }
 
@@ -1099,4 +1214,33 @@ p{
     z-index: -1;
   }
 
+  footer{
+    margin-top: 70px;
+    text-align: center;
+  }
+  #email{
+    width: 60%;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #message{    
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    resize: none;
+    color: #000;
+    outline: none;
+  }
+  #send-msg{    
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--accent);
+    color: #fff;
+    font-weight: 500;
+  }
 }
