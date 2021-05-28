@@ -518,7 +518,7 @@ p{
   margin: 30px 10px;
   border-radius: 15px;
   background-color: #fff;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.20);
 }
 .plan-header{
   text-align: center;
@@ -552,7 +552,7 @@ p{
   bottom: -20px;
   width: 60%;
   text-align: center;
-  padding: 7px;
+  padding: 10px;
   margin: 0 auto;
   color: #fff;
   border-radius: 20px;
