@@ -47,6 +47,19 @@ p{
   margin: 0;
   padding: 0;
 }
+
+.yellow-text{
+  color: var(--accent);
+}
+.hover-popup{  
+  transform: perspective(1px) translateZ(0);
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+.hover-popup:hover{  
+  transform: scale(1.05);
+}
+
 /* --------------------------------------------- Navbar------------------------------ */
 
 #nav-section {
@@ -122,12 +135,14 @@ p{
   left: 30px;
   top: 30px;
   width: 30%;
+  z-index: -1;
 }
 #home .green-circle{
   position: absolute;
   left: 10%;
   top: 50%;
   width: 30%;
+  z-index: -1;
 }
 #home .yellow-circle{
   position: absolute;
@@ -140,16 +155,19 @@ p{
   right: 10%;
   top: 65%;
   width: 30%;
+  z-index: -1;
 }
 #home .right-1{
   position: absolute;
   left: 60px;
   top: 100px;
+  z-index: -1;
 }
 #home .right-2{
   position: absolute;
   left:45%;
   top: 200px;
+  z-index: -1;
   animation: grp-1-anim 16s linear 0.5s infinite  both;
 }
 #home .right-3{
@@ -162,56 +180,66 @@ p{
   position: absolute;
   left:70px;
   bottom: 150px;
+  z-index: -1;
   animation: grp-1-anim 15s linear 1s infinite  both;
 }
 #home .right-5{
   position: absolute;
   right:20%;
   bottom: 50px;
+  z-index: -1;
   animation: grp-1-anim 12s linear 1.3s infinite  both;
 }
 #home .left-1{
   position: absolute;
   left: 60px;
   top: 90px;
+  z-index: -1;
   animation: grp-2-anim 15s linear infinite  both;
 }
 #home .left-2{
   position: absolute;
   left:25%;
   top: 150px;
+  z-index: -1;
   animation: grp-2-anim 16s linear 0.5s infinite  both;
 }
 #home .left-3{
   position: absolute;
   right:32%;
   top: 130px;
+  z-index: -1;
   animation: grp-2-anim 18s linear 0.9s infinite  both;
 }
 #home .left-4{
   position: absolute;
   right:12%;
   top: 120px;
+  z-index: -1;
 }
 #home .left-5{
   position: absolute;
   left:20%;
   top: 80%;
+  z-index: -1;
 }
 #home .left-6{
   position: absolute;
   left:30%;
   top: 100%;
+  z-index: -1;
 }
 #home .left-7{
   position: absolute;
   left:45%;
   bottom: 5%;
+  z-index: -1;
 }
 #home .left-8{
   position: absolute;
   right:20%;
   bottom: 10px;
+  z-index: -1;
 }
 .home-wrapper{
   padding-top: 20%;
@@ -331,9 +359,6 @@ p{
 .feature-card .feature-header{
   margin: 20px;
 }
-.yellow-text{
-  color: var(--accent);
-}
 .card-img{
   width: 40%;
   margin: 0 auto;
@@ -362,6 +387,7 @@ p{
   position: absolute;
   left: 2%;
   width: 30%;
+  z-index: -1;
   
 }
 #features .blue-circle{
@@ -369,6 +395,7 @@ p{
   right: 10%;
   top: 165%;
   width: 30%;
+  z-index: -1;
 }
 /* ----------------------------------------------------------------Relation--------------------------------------------------------------- */
 .relation{
@@ -494,22 +521,26 @@ p{
   position: absolute;
   left: -2%;
   margin-top: -10%;
+  z-index: -1;
 }
 #plan .yellow-circle{  
   position: absolute;
   right: 0;
   margin-top: 5%;
+  z-index: -1;
 }
 #plan .green-circle{
   position: absolute;
   left: -10%;
   margin-top: 26%;
+  z-index: -1;
 
 }
 #plan .red-circle{
   position: absolute;
   right: 10%;
   margin-top: 36%;
+  z-index: -1;
 }
 #plan h2{
   text-align: center;
@@ -564,6 +595,38 @@ p{
   border-radius: 20px;
 }
 
+/*-------------------------------------------------- Testimonmials--------------------------------------- */
+.testimonial{
+  margin-top: 10%;
+  padding: 2% 10%;
+}
+.testimonial .yellow-circle{  
+  position: absolute;
+  left: -30%;
+  margin-top: 5%;
+  z-index: -1;
+}
+.testimonial h2{
+  text-align: center;
+}
+.testimonial .testimonial-card{
+  background-color: #fff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.20);
+  margin: 10% 10px 0;
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+}
+.testimonial-card img{
+  width: 90px;
+  height: 90px;
+  position: relative;
+  top: -45px;
+}
+.testimonial-card p{
+  position: relative;
+  top: -25px;
+}
 /*-------------------------------------------------- Media Query--------------------------------------- */
 @media only screen and (max-width: 992px) {
   
@@ -775,8 +838,8 @@ p{
   }
 }
 
-@media only screen and (max-width: 768){
+@media only screen and (max-width: 768px){
   #plan{
-    visibility: hidden;
+    display: none;
   }
 }
