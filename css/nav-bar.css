@@ -17,6 +17,26 @@ html, body {
   max-width: 100%;
   overflow-x: hidden;
 }
+a,
+a:active,
+a:visited,
+a:hover,
+a:link{
+  text-decoration: none;
+}
+
+
+.hover-popup{  
+  transform: perspective(1px) translateZ(0);
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+.hover-popup:hover{  
+  transform: scale(1.05);
+}
+.plan-card.hover-popup:hover{  
+  transform: scale(1.10);
+}
 /* --------------------------------------------- Navbar------------------------------ */
 
 #nav-section {
