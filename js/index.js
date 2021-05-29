@@ -31,6 +31,12 @@ if(docName.indexOf("Home") !=-1){
     console.log($nav[1]);
     $($nav[4]).addClass("nav-active");
     $($nav[4]).removeClass("dot");
+}else if(docName.indexOf("Cart") !=-1){
+    $nav = $(".nav-item");
+    $nav.removeClass("nav-active");
+    console.log($nav[1]);
+    $($nav[5]).addClass("nav-active");
+    $($nav[5]).removeClass("dot");
 }
 
 $(".nav-item").mouseenter(function () { 
@@ -43,11 +49,9 @@ $(".nav-item").mouseenter(function () {
 }).click(function (e) { 
     
     let isCart = $(this).hasClass("cart");
-    if( !isCart){
-        $(".nav-item").removeClass("nav-active");
-        $(this).addClass("nav-active");
-        $(this).removeClass("dot");
-    }
+    $(".nav-item").removeClass("nav-active");
+    $(this).addClass("nav-active");
+    $(this).removeClass("dot");
     let tar_get = $(this).text();
     if(tar_get.indexOf("Home") !=-1){        
         window.location.href="/";
@@ -59,6 +63,8 @@ $(".nav-item").mouseenter(function () {
         window.location.href="about-us.html";
     }else if(tar_get.indexOf("Contact Us") !=-1){        
         window.location.href="contact-us.html";
+    }else if(isCart){
+        window.location.href="cart.html";
     }
 });
 

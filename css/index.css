@@ -110,9 +110,11 @@ p{
   text-align: center;
   cursor: pointer;
 }
-.cart {
-    width: 30px;
+.nav-item.cart {
+    width: 50px;
     text-align: center;
+    padding: 4px 5px;
+    margin: 0;
 }
 .nav-item:nth-child(5) {
   margin-right: 60px;
@@ -736,7 +738,13 @@ footer{
 
 
 @media only screen and (max-width: 768px) {
-  
+  .container-fluid{
+    padding-right: 0;
+    margin-right: 0;
+  }
+  .navbar{
+    padding: 0.5rem 0 0.5rem 1rem;
+  }
   .nav-item {
     margin: auto;
     text-align: center;
@@ -747,8 +755,10 @@ footer{
   .navbar-nav{
     margin-top: 20px;
   }
-  .cart {
-    width: auto;
+  .nav-item.cart {
+    margin: auto;
+    text-align: center;
+    width: 120px;
   }
   h1{
     font-weight: 600;
@@ -999,6 +1009,13 @@ footer{
 }
 
 @media only screen and (min-width: 769px) and (max-width: 992px) {
+  .container-fluid{
+    padding-right: 0;
+    margin-right: 0;
+  }
+  .navbar{
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+  }
   .nav-item {
     margin: auto;
     text-align: center;
