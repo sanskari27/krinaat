@@ -33,20 +33,6 @@ p{
 .yellow-text{
   color: var(--accent);
 }
-.hover-popup{  
-  transform: perspective(1px) translateZ(0);
-  transition-duration: 0.3s;
-  transition-property: transform;
-}
-.hover-popup:hover{  
-  transform: scale(1.05);
-}
-.hover-popup:hover{  
-  transform: scale(1.05);
-}
-.plan-card.hover-popup:hover{  
-  transform: scale(1.10);
-}
 
 
 /*------------------------------------ Home Section---------------------------------- */
