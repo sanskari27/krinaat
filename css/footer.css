@@ -98,6 +98,7 @@ footer {
   footer {
     margin-top: 70px;
     text-align: center;
+    font-size: 0.9rem;
   }
 
   #email {

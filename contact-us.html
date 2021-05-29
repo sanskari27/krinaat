@@ -7,13 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
   <title>Krinnat - Contact us</title>
 
-  
+
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/icon-16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/icon-32.png">
   <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/icon-192.png">
   <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon/icon-512.png">
 
-  
+
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
@@ -70,14 +70,13 @@
       </nav>
     </div>
   </section>
-
-  <!-- ---------------------------------->
-
+  
+  <img class="yellow-circle" src="assets/yellow-polygon.svg">
+  <img class="red-circle" src="assets/red-circle-10.svg">
   <section class="contact-us">
-    <img class="yellow-circle" src="assets/yellow-polygon.svg">
-    <div class="contact-text-wrapper">
+    <div >
       <h1><span class="yellow-text">Contact</span> us</h1>
-      <p>Looking for a markiting partner?</p>
+      <p>Looking for a marketing partner?</p>
       <p>You found.</p>
       <div class="social-links">
         <a href="https://www.facebook.com/krinaat.kr"><img class="social-img fb" src="assets/facebook-black.svg "></a>
@@ -90,7 +89,7 @@
   <section id="proposal">
 
     <div class="row">
-      <div class="col-lg-5 proposal-text-wrapper">
+      <div class="col-lg-4 proposal-text-wrapper">
         <h2>What will be </h2>
         <h2>our<span class="yellow-text"> next </span>step?</h2>
         <p>Your are one step closer </p>
@@ -101,84 +100,60 @@
             <img src="assets/timeline-circle.svg">
             <div>
               <h5>We'll prepare for <span class="red-text"> proposal</span></h5>
-              <p>
-                Required scope, timeline and approx 
-                price will be included if you provide
-                us with details information about project 
-              </p>
+              <p>Required scope, timeline and approx price will be included if you provi us with details information
+                about project</p>
             </div>
           </div>
           <div class="timeline-card">
             <img src="assets/timeline-circle.svg">
             <div>
               <h5><span class="red-text">Together</span> we discuss it</h5>
-              <p>
-                Let’s assemble all the details of the project
-                and discuss the possible variants and option
-              </p>
+              <p>Let’s assemble all the details of the project and discuss the possible variants and option </p>
             </div>
           </div>
           <div class="timeline-card">
             <img src="assets/timeline-circle.svg">
             <div>
               <h5>Let’s start <span class="red-text">buliding</span></h5>
-              <p>
-                When the contract is digned, all that 
-                is left to complete the goal. 
-              </p>
+              <p>When the contract is digned, all that is left to complete the goal.</p>
             </div>
           </div>
-          </div>
-
-        
-      </div>
-
-      <div class="col-lg-6 ">
-
-        <div class="contact-form">
-
-          <form class="proposal-form">
-            <div class="form-info">
-              <img src="assets/email 1.svg">
-              <div>
-                <p>Write us about the project</p> 
-                <p>and we will prepare a<span class="yellow-text"> proposal</span></p>
-                <p>for you within <span class="text-bold">24</span> hours</p>
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group col-lg-4 col-md-4">
-                <input type="text" class="form-control color" placeholder="Your Name">
-              </div>
-              <div class="form-group col-lg-4 col-md-4">
-                <input type="email" class="form-control color" id="inputEmail" placeholder="Your Email">
-              </div>
-            </div>
-            <div class="form-group custom">
-              <input type="text" class="form-control color" placeholder="Company">
-            </div>
-            <div class="form-group custom">
-              <input type="text" class="form-control color" placeholder="Budget (approx)">
-            </div>
-            <h5>Optional</h5>
-            <div class="form-group">
-              <textarea class="form-control color" id="" rows="6" placeholder="Project Details"></textarea>
-            </div>
-            <div class="form-control color">
-              <img src="assets/google-docs 1.svg" alt="">
-              <input type="file" class="form-control-file" id="projectFiles">
-              
-            </div>
-            <button class="btn btn-lg">Send</button>
-            </div>
-          </form>
         </div>
+      </div>
+      <div class="col-lg-7 ">
+        <form class="proposal-form">
+          <div class="form-info">
+            <img src="assets/email 1.svg">
+            <div>
+              <p>Write us about the project</p>
+              <p>and we will prepare a<span class="yellow-text"> proposal</span></p>
+              <p>for you within <span class="text-bold">24</span> hours</p>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-5">
+              <input type="text" class="form-control" placeholder="Your Name" id="proposal-name">
+            </div>
+            <div class="form-group col-md-5">
+              <input type="email" class="form-control" id="proposal-email" placeholder="Your Email" id="proposal-email">
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Company" id="proposal-company">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Budget (approx)" id="proposal-budget">
+          </div>
+          <h5>Optional</h5>
+          <div class="form-group">
+            <textarea class="form-control" id="proposal-details" rows="6" placeholder="Project Details"></textarea>
+          </div>
+          <span class="btn btn-lg" id="proposal-send">Send</span>
+        </form>
 
       </div>
   </section>
 
-
-  <!--------------------------------------->
 
   <footer class="row">
     <div class="footer-wrapper col-lg-7">
