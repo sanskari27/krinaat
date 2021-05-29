@@ -1,10 +1,197 @@
 :root {
-    --dark: #0e2431;
-    --primary: #fc3a52;
-    --accent: #f9b248;
-    --light: #FFF1DB;
-    --text: #e5e5e5;
-  }
+  --dark: #0e2431;
+  --primary: #fc3a52;
+  --accent: #f9b248;
+  --light: #fff1db;
+  --text: #e5e5e5;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background-color: #fff;
+  font-family: "Montserrat";
+}
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.1;
+  width: 100%;
+  font-family: "Montserrat";
+}
+h2 {
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 1.1;
+  font-family: "Montserrat";
+}
+h5 {
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 1.1;
+  font-family: "Montserrat";
+}
+h6 {
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 1.1;
+  margin: 0;
+  font-family: "Montserrat";
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.yellow-text {
+  color: var(--accent);
+}
+
+.red-text{
+  color:var(--primary)
+}
+
+
+.contact-us {
+  padding: 10% 7% 5%;
+}
+
+.yellow-circle{
+  position: absolute;
+  left: -35%;
+  top: 80%;
+}
+
+.contact-text-wrapper {
+  padding-right: 50%;
+}
+
+.social-img {
+  margin-right: 20px;
+}
+
+.social-links {
+  margin-top: 50px;
+}
+
+
+.proposal-text-wrapper {
+  margin-left: 7%;
+  /* padding-right: 20%; */
+  /* line-height: 1.5; */
+}
+
+hr {
+  width: 1px;
+  height: 270px;
+  border-left: 2px solid black;
+  float: left !important;
+}
+
+.timeline {
+  margin-top: 70px;
+  margin-bottom: 40px ;
+}
+
+.timeline > div {
+  display: block;
+  margin-left: -14px;
+  position: absolute;
+}
+.timeline > div > img {
+  height: 30px;
+}
+.timeline > div > div {
+  margin-left: 50px;
+  margin-top: -30px;
+  padding: 0 10px;
+}
+.timeline > div:nth-of-type(2) {
+  margin-top: 135px;
+}
+.timeline > div:nth-of-type(3) {
+  margin-top: 270px;
+}
+
+.timeline-card p{
+  font-weight: 400;
+}
+
+footer{
+  margin-top: 20%;
+}
+
+.proposal-form img{
+  margin: 0 20px 20px ;
+}
+
+.proposal-form{
+  padding: 10% 7%;
+  border-radius: 20px;
+  margin:0 10%;
+  background-color: #fff;
+  box-shadow:  0 0 20px #373b3d57;
+  backdrop-filter: blur(25px);
+}
+
+.form-info{
+  display: flex;
+}
+
+.form-row > div:nth-child(2){
+  margin-left: 10px;
+}
+
+.color{
+  background-color: #FFF1DB;
+  border-radius: 10px;
+  border: none;
+}
+
+.custom{
+  width: 70%;
+}
+
+form h5{
+  line-height: 3;
+  font-weight: 400;
+}
+
+.proposal-form img{
+  margin-left: 0;
+  margin-bottom: 50px;
+}
+
+.text-bold{
+  font-weight: 700 !important; 
+}
+
+.social-links a{
+  opacity: 0.7;
+}
+.social-links a:hover{
+  opacity: 1;
+}
+
+button{
+  border-radius: 15px !important;
+  margin-top: 30px;
+  margin-left: 35% ;
+  background-color: var(--accent);
+  width: 30%;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+
   html {
     scroll-behavior: smooth;
   }
