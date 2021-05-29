@@ -1,10 +1,5 @@
 //jshint esversion:6
 
-if (window.location.hostname == "krinaat-web.web.app" || 
-    window.location.hostname == "krinaat-web.firebaseapp.com") {
-       window.location.href = 'https://krinaat.com'; 
-}
-
 let docName = document.title;
 if(docName.indexOf("Home") !=-1){
     $nav = $(".nav-item");
@@ -18,6 +13,24 @@ if(docName.indexOf("Home") !=-1){
     console.log($nav[1]);
     $($nav[1]).addClass("nav-active");
     $($nav[1]).removeClass("dot");
+}else if(docName.indexOf("Services") !=-1){
+    $nav = $(".nav-item");
+    $nav.removeClass("nav-active");
+    console.log($nav[1]);
+    $($nav[2]).addClass("nav-active");
+    $($nav[2]).removeClass("dot");
+}else if(docName.indexOf("About us") !=-1){
+    $nav = $(".nav-item");
+    $nav.removeClass("nav-active");
+    console.log($nav[1]);
+    $($nav[3]).addClass("nav-active");
+    $($nav[3]).removeClass("dot");
+}else if(docName.indexOf("Contact us") !=-1){
+    $nav = $(".nav-item");
+    $nav.removeClass("nav-active");
+    console.log($nav[1]);
+    $($nav[4]).addClass("nav-active");
+    $($nav[4]).removeClass("dot");
 }
 
 $(".nav-item").mouseenter(function () { 
@@ -28,38 +41,29 @@ $(".nav-item").mouseenter(function () {
 }).mouseleave(function () { 
     $(this).removeClass("dot");
 }).click(function (e) { 
+    
     let isCart = $(this).hasClass("cart");
     if( !isCart){
         $(".nav-item").removeClass("nav-active");
         $(this).addClass("nav-active");
         $(this).removeClass("dot");
     }
+    let tar_get = $(this).text();
+    if(tar_get.indexOf("Home") !=-1){        
+        window.location.href="/";
+    }else if(tar_get.indexOf("Pricing") !=-1){        
+        window.location.href="pricing.html";
+    }else if(tar_get.indexOf("Services") !=-1){        
+        window.location.href="services.html";
+    }else if(tar_get.indexOf("About Us") !=-1){
+        window.location.href="about-us.html";
+    }else if(tar_get.indexOf("Contact Us") !=-1){        
+        window.location.href="contact-us.html";
+    }
 });
 
 
 
-var firebaseConfig = {
-    apiKey: "AIzaSyCp5QoHWnUTKdqp_gQSuCDjsB0YnzM5AXQ",
-    authDomain: "krinaat-web.firebaseapp.com",
-    projectId: "krinaat-web",
-    storageBucket: "krinaat-web.appspot.com",
-    messagingSenderId: "947589267202",
-    appId: "1:947589267202:web:c5256ed49ed46c5cf1cc1b",
-    measurementId: "G-L10E5L1EF2"
-  };
-  // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-firebase.analytics();
-var firestore = firebase.firestore();
-
-$("#send-msg").click(function (e) { 
-    let email = $("#email").val();
-    let msg = $("#message").val();
-    $("#email").val("");
-    $("#message").val("");
-    firestore.collection("messages").add({
-        email_id : email,
-        message : msg 
-    });
-
+$("#explore-now-btn").click(function(){
+    window.location.href="services.html";
 });

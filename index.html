@@ -38,22 +38,22 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item  nav-active">
-              <a class="nav-btn" href="/" id="">Home</a>
+              <span class="nav-btn" href="/" id="">Home</span>
             </li>
             <li class="nav-item">
-              <a class="nav-btn" href="pricing.html">Pricing</a>
+              <span class="nav-btn" href="pricing.html">Pricing</span>
             </li>
             <li class="nav-item">
-              <a class="nav-btn" href="">Services</a>
+              <span class="nav-btn" href="services.html">Services</span>
             </li>
             <li class="nav-item">
-              <a class="nav-btn" href="">About Us</a>
+              <span class="nav-btn" href="about-us.html">About Us</span>
             </li>
             <li class="nav-item">
-              <a class="nav-btn" href="">Contact Us</a>
+              <span class="nav-btn" href="contact-us.html">Contact Us</span>
             </li>
             <li class="nav-item cart">
-              <a class="nav-btn" href=""><img src="assets/shopping-bag.svg" alt="" srcset=""></a>
+              <span class="nav-btn" href=""><img src="assets/shopping-bag.svg" alt="" srcset=""></span>
             </li>
           </ul>
 
@@ -87,10 +87,12 @@
         <h1>Your Virtual</h1>
         <h1>Marketing Agency</h1>
         <h5 class="yellow-text">Boost you social media with us</h5>
-        <div id="get-started-btn" class="hover-popup">
-          <h6>Get Started</h6>
-          <img class="right-arrow" src="assets/arrow-right.svg">
-        </div>
+        <a href="#features">
+          <div id="get-started-btn" class="hover-popup">
+            <h6>Get Started</h6>
+            <img class="right-arrow" src="assets/arrow-right.svg">
+          </div>
+        </a>
       </div>
       <div class="home-image-wrapper col-lg-5">
         <img class="home-image" src="assets/home-image-person-mac.svg">
@@ -325,9 +327,8 @@
   <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
-  <script src="/__/firebase/init.js"></script>
-  
   <script src="js/index.js"></script>
+  <script src="js/firebase.js"></script>
 </body>
 
 </html>

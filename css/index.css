@@ -108,6 +108,7 @@ p{
   margin: 0 3px;
   width: 120px;
   text-align: center;
+  cursor: pointer;
 }
 .cart {
     width: 30px;
@@ -252,6 +253,9 @@ p{
   padding-bottom: 20%;
   padding-left: 5%;
   width: auto;
+}
+.home-wrapper a{
+  text-decoration: none;
 }
 #home .home-image-wrapper{
   padding: 12% 0;
