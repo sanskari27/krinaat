@@ -38,6 +38,10 @@ footer {
   height: 30px;
   width: 30px;
   margin-bottom: 30px;
+  opacity: 0.6;
+}
+.footer-links a img:hover {
+  opacity: 1;
 }
 .footer-links > a {
   margin-right: 20px;
