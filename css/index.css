@@ -1,22 +1,4 @@
-:root {
-  --dark: #0e2431;
-  --primary: #fc3a52;
-  --accent: #f9b248;
-  --light: #FFF1DB;
-  --text: #e5e5e5;
-}
-html {
-  scroll-behavior: smooth;
-}
-body {
-  margin: 0;
-  background-color: #fff;
-  font-family: "Montserrat";
-}
-html, body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
+
 h1{
   font-weight: 700;
   letter-spacing: 1px;
@@ -66,76 +48,6 @@ p{
   transform: scale(1.10);
 }
 
-/* --------------------------------------------- Navbar------------------------------ */
-
-#nav-section {
-  content: "";
-  position: fixed;
-  margin: 10px 2% 0%;
-  width: 96%;
-  box-shadow: inset 0 0 2000px rgba(220, 220, 220, 0.7);
-  backdrop-filter: blur(10px);
-  border-radius: 15px;
-  z-index: 9999;
-}
-.nav-btn,
-.nav-btn:active,
-.nav-btn:visited,
-.nav-btn:hover,
-.nav-btn:link {
-  color: var(--dark);
-  text-decoration: none;
-  font-weight: 500;
-  transition: 0.5s;
-}
-.dot:not(.nav-active, .nav-item:nth-child(6)){    
-    display: inline-block;
-    position: relative;
-}
-.dot::before {
-    content: '.';
-    font-weight: 900;
-    font-size: 1.2rem;
-    display: inline-block;
-    position: absolute;
-    bottom: -0.5em;
-    left: 50%;
-    color: var(--accent);
-}
-.nav-item {
-  border-radius: 15px;
-  padding: 4px 15px;
-  margin: 0 3px;
-  width: 120px;
-  text-align: center;
-  cursor: pointer;
-}
-.nav-item.cart {
-    width: 50px;
-    text-align: center;
-    padding: 4px 5px;
-    margin: 0;
-}
-.nav-item:nth-child(5) {
-  margin-right: 60px;
-}
-.nav-active {
-  background-color: var(--accent);
-  transition: 0.5s;
-}
-.navbar .navbar-toggler {
-  border-color: transparent;
-  outline: none;
-}
-.navbar .navbar-toggle-icon {
-  display: inline-block;
-  width: 1.5em;
-  height: 1.5em;
-  vertical-align: middle;
-  content: "";
-  background: no center center;
-  background-size: 100% 100%;
-}
 
 /*------------------------------------ Home Section---------------------------------- */
 
@@ -667,99 +579,12 @@ p{
 }
 
 
-/*-------------------------------------------------- Footer--------------------------------------- */
-footer{
-  background-color: var(--dark);
-  margin-top: 70px;
-  padding: 2% 10% 3%;
-  color: #fff;
-}
-.footer-wrapper{
-  z-index: 2;
-}
-.footer-wrapper > h4:nth-child(1) {
-  margin: 30px 0;
-}
-.footer-links a img{
-  height: 30px;
-  width: 30px;
-  margin-bottom: 30px;
-}
-.footer-links > a{
-  margin-right: 20px;
-  cursor:pointer;
-}
-.footer-wrapper > a {
-  color: #fff;
-  font-size: 1.2rem;
-  font-weight: 500;
-  
-}
-.contact-msg-wrapper > h4{
-  margin: 30px 0;
-}
-#email{
-  display: block;
-  font-weight: 300;
-  width: 80%;
-  height: 40px;
-  padding: 10px;
-  margin-bottom: 15px;
-  border-radius: 10px;
-  color: #000;
-  outline: none;
-  border: none;
-}
-#message{
-  display: block;
-  font-weight: 300;
-  width: 80%;
-  height: 150px;
-  padding: 10px;
-  margin-bottom: 15px;
-  border-radius: 10px;
-  resize: none;
-  color: #000;
-  outline: none;
-  border: none;
-}
-#send-msg{
-  display: block;
-  border-radius: 15px;
-  padding: 10px 20px;
-  width: 30%;
-  background-color: var(--accent);
-  color: #fff;
-  font-weight: 500;
-  text-align: center;
-}
+
 
 /*-------------------------------------------------- Media Query--------------------------------------- */
 
 
 @media only screen and (max-width: 768px) {
-  .container-fluid{
-    padding-right: 0;
-    margin-right: 0;
-  }
-  .navbar{
-    padding: 0.5rem 0 0.5rem 1rem;
-  }
-  .nav-item {
-    margin: auto;
-    text-align: center;
-  }
-  .nav-item:nth-child(5) {
-    margin: auto;
-  }
-  .navbar-nav{
-    margin-top: 20px;
-  }
-  .nav-item.cart {
-    margin: auto;
-    text-align: center;
-    width: 120px;
-  }
   h1{
     font-weight: 600;
     line-height: 1.1;
@@ -975,60 +800,9 @@ footer{
     z-index: -1;
   }
 
-  footer{
-    margin-top: 70px;
-    text-align: center;
-    
-  }
-  
-  #email{
-    width: 90%;
-    height: 40px;
-    padding: 10px;
-    margin-bottom: 15px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  #message{    
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 15px;
-    border-radius: 10px;
-    resize: none;
-    color: #000;
-    outline: none;
-  }
-  #send-msg{    
-    margin-left: auto;
-    margin-right: auto;
-    background-color: var(--accent);
-    color: #fff;
-    font-weight: 500;
-  }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 992px) {
-  .container-fluid{
-    padding-right: 0;
-    margin-right: 0;
-  }
-  .navbar{
-    padding: 0.5rem 0.5rem 0.5rem 1rem;
-  }
-  .nav-item {
-    margin: auto;
-    text-align: center;
-  }
-  .nav-item:nth-child(5) {
-    margin: auto;
-  }
-  .navbar-nav{
-    margin-top: 20px;
-  }
-  .cart {
-    width: auto;
-  }
   h1{
     font-weight: 600;
     line-height: 1.1;
@@ -1251,33 +1025,4 @@ footer{
     z-index: -1;
   }
 
-  footer{
-    margin-top: 70px;
-    text-align: center;
-  }
-  #email{
-    width: 60%;
-    height: 40px;
-    padding: 10px;
-    margin-bottom: 15px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  #message{    
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 15px;
-    border-radius: 10px;
-    resize: none;
-    color: #000;
-    outline: none;
-  }
-  #send-msg{    
-    margin-left: auto;
-    margin-right: auto;
-    background-color: var(--accent);
-    color: #fff;
-    font-weight: 500;
-  }
 }

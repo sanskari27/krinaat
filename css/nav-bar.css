@@ -1,0 +1,140 @@
+:root {
+  --dark: #0e2431;
+  --primary: #fc3a52;
+  --accent: #f9b248;
+  --light: #FFF1DB;
+  --text: #e5e5e5;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background-color: #fff;
+  font-family: "Montserrat";
+}
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+/* --------------------------------------------- Navbar------------------------------ */
+
+#nav-section {
+  content: "";
+  position: fixed;
+  margin: 10px 2% 0%;
+  width: 96%;
+  box-shadow: inset 0 0 2000px rgba(220, 220, 220, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  z-index: 9999;
+}
+.nav-btn,
+.nav-btn:active,
+.nav-btn:visited,
+.nav-btn:hover,
+.nav-btn:link {
+  color: var(--dark);
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.5s;
+}
+.dot:not(.nav-active, .nav-item:nth-child(6)) {
+  display: inline-block;
+  position: relative;
+}
+.dot::before {
+  content: ".";
+  font-weight: 900;
+  font-size: 1.2rem;
+  display: inline-block;
+  position: absolute;
+  bottom: -0.5em;
+  left: 50%;
+  color: var(--accent);
+}
+.nav-item {
+  border-radius: 15px;
+  padding: 4px 15px;
+  margin: 0 3px;
+  width: 120px;
+  text-align: center;
+  cursor: pointer;
+}
+.nav-item.cart {
+  width: 50px;
+  text-align: center;
+  padding: 4px 5px;
+  margin: 0;
+}
+.nav-item:nth-child(5) {
+  margin-right: 60px;
+}
+.nav-active {
+  background-color: var(--accent);
+  transition: 0.5s;
+}
+.navbar .navbar-toggler {
+  border-color: transparent;
+  outline: none;
+}
+.navbar .navbar-toggle-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  content: "";
+  background: no center center;
+  background-size: 100% 100%;
+}
+.navbar-brand{
+    height: 45px;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .container-fluid {
+    padding-right: 0;
+    margin-right: 0;
+  }
+  .navbar {
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+  }
+  .nav-item {
+    margin: auto;
+    text-align: center;
+  }
+  .nav-item:nth-child(5) {
+    margin: auto;
+  }
+  .navbar-nav {
+    margin-top: 20px;
+  }
+  .nav-item.cart {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container-fluid {
+    padding-right: 0;
+    margin-right: 0;
+  }
+  .navbar {
+    padding: 0.5rem 0 0.5rem 1rem;
+  }
+  .nav-item {
+    margin: auto;
+    text-align: center;
+  }
+  .nav-item:nth-child(5) {
+    margin: auto;
+  }
+  .navbar-nav {
+    margin-top: 20px;
+  }
+  .nav-item.cart {
+    margin: auto;
+    text-align: center;
+    width: 120px;
+  }
+}

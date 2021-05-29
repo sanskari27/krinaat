@@ -1,0 +1,19 @@
+:root {
+    --dark: #0e2431;
+    --primary: #fc3a52;
+    --accent: #f9b248;
+    --light: #FFF1DB;
+    --text: #e5e5e5;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    margin: 0;
+    background-color: #fff;
+    font-family: "Montserrat";
+  }
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }

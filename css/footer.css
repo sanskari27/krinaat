@@ -1,0 +1,153 @@
+:root {
+  --dark: #0e2431;
+  --primary: #fc3a52;
+  --accent: #f9b248;
+  --light: #FFF1DB;
+  --text: #e5e5e5;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background-color: #fff;
+  font-family: "Montserrat";
+}
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+/*-------------------------------------------------- Footer--------------------------------------- */
+footer {
+  background-color: var(--dark);
+  margin-top: 70px;
+  padding: 2% 10% 3%;
+  color: #fff;
+}
+.footer-wrapper {
+  z-index: 2;
+}
+.footer-wrapper > h3 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.footer-wrapper > h4:nth-child(1) {
+  margin: 30px 0;
+}
+.footer-links a img {
+  height: 30px;
+  width: 30px;
+  margin-bottom: 30px;
+}
+.footer-links > a {
+  margin-right: 20px;
+  cursor: pointer;
+}
+.footer-wrapper > a {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.contact-msg-wrapper > h4 {
+  margin: 30px 0;
+}
+#email {
+  display: block;
+  font-weight: 300;
+  width: 80%;
+  height: 40px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  color: #000;
+  outline: none;
+  border: none;
+}
+#message {
+  display: block;
+  font-weight: 300;
+  width: 80%;
+  height: 150px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  resize: none;
+  color: #000;
+  outline: none;
+  border: none;
+}
+#send-msg {
+  display: block;
+  border-radius: 15px;
+  padding: 10px 20px;
+  width: 30%;
+  background-color: var(--accent);
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    margin-top: 70px;
+    text-align: center;
+  }
+
+  #email {
+    width: 90%;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #message {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    resize: none;
+    color: #000;
+    outline: none;
+  }
+  #send-msg {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--accent);
+    color: #fff;
+    font-weight: 500;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  footer {
+    margin-top: 70px;
+    text-align: center;
+  }
+  #email {
+    width: 60%;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #message {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    resize: none;
+    color: #000;
+    outline: none;
+  }
+  #send-msg {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--accent);
+    color: #fff;
+    font-weight: 500;
+  }
+}

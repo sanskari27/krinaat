@@ -67,9 +67,3 @@ $(".nav-item").mouseenter(function () {
         window.location.href="cart.html";
     }
 });
-
-
-
-$("#explore-now-btn").click(function(){
-    window.location.href="services.html";
-});
