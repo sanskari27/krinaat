@@ -236,13 +236,17 @@ p {
   top: 95%;
 }
 
+footer{
+  margin-top: 10%;
+}
+
 @media only screen and (max-width: 768px) {
     
   #plan > p{
     width: 100%;
   }
   .plan-card{
-    padding: 20px 10px 0;
+    padding: 20px 10px 0
   }
   .plan-card .plan-detail{
     font-size: 0.8rem;
