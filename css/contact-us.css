@@ -55,7 +55,7 @@
   }
 
   .contact-us{
-    padding: 10% 7% 5%;
+    padding: 10% 7% 3%;
   }
 
   .contact-text-wrapper{
@@ -78,13 +78,13 @@
 
   hr{
     width: 1px;
-    height: 210px;
+    height: 270px;
     border-left: 2px solid black ;
     float: left !important;
   }
 
   .timeline{
-    margin-top: 100px;
+    margin-top: 70px;
   }
   
   .timeline > div{
@@ -92,13 +92,18 @@
     margin-left: -14px;
     position: absolute;
   }
-  .timeline > div img{
+  .timeline > div > img{
     height: 30px;
   }
-  .timeline > div:nth-child(2){
-   margin-top: 105px;
+  .timeline > div > div{
+    margin-left: 50px;
+    margin-top: -30px;
+    padding: 0 10px;
+  }
+  .timeline > div:nth-of-type(2){
+   margin-top: 135px;
 
   }
-  .timeline > div:nth-child(3){
+  .timeline > div:nth-of-type(3){
     bottom: 0px;
   }

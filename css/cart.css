@@ -1,19 +1,50 @@
 :root {
-    --dark: #0e2431;
-    --primary: #fc3a52;
-    --accent: #f9b248;
-    --light: #FFF1DB;
-    --text: #e5e5e5;
-  }
-  html {
-    scroll-behavior: smooth;
-  }
-  body {
-    margin: 0;
-    background-color: #fff;
-    font-family: "Montserrat";
-  }
-  html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-  }
+  --dark: #0e2431;
+  --primary: #fc3a52;
+  --accent: #f9b248;
+  --light: #fff1db;
+  --text: #e5e5e5;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background-color: #fff;
+  font-family: "Montserrat";
+}
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+h1 {
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.1;
+  width: 100%;
+  font-family: "Montserrat";
+}
+h2 {
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.1;
+  font-family: "Montserrat";
+}
+h5 {
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.1;
+  font-family: "Montserrat";
+}
+h6 {
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 1.1;
+  margin: 0;
+  font-family: "Montserrat";
+}
+p {
+  margin: 0;
+  padding: 0;
+}
