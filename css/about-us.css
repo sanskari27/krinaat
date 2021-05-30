@@ -49,11 +49,25 @@ p {
   padding: 0;
 }
 
-
 .not-found{
-  margin: 10em 0;
+  margin: 5em 0 4em;
+  width: 30%;
   display: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,50%);
+  margin-left: 35%;
+  animation: anim 10s linear infinite both;
+}
+h3{
+  text-align: center;
+}
+
+@keyframes anim{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(50px);
+  }
+  100%{
+    transform: translateY(0);
+  }
 }

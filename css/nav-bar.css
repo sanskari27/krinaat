@@ -51,8 +51,8 @@ a:link{
   position: fixed;
   margin: 10px 2% 0%;
   width: 96%;
-  box-shadow: inset 0 0 2000px rgba(220, 220, 220, 0.8);
-  backdrop-filter: blur(50px);
+  box-shadow: inset 0 0 2000px rgba(220, 220, 220, 0.6);
+  backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(50px);
   border-radius: 15px;
   z-index: 9999;
