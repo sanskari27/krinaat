@@ -48,3 +48,12 @@ p {
   margin: 0;
   padding: 0;
 }
+
+
+.not-found{
+  margin: 10em 0;
+  display: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,50%);
+}
