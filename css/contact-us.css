@@ -97,7 +97,7 @@ p {
 
 hr {
   width: 1px;
-  height: 270px;
+  height: 330px;
   border-left: 2px solid black;
   float: left !important;
 }
@@ -121,10 +121,10 @@ hr {
   padding: 0 10px;
 }
 .timeline > div:nth-of-type(2) {
-  margin-top: 135px;
+  margin-top: 165px;
 }
 .timeline > div:nth-of-type(3) {
-  margin-top: 270px;
+  margin-top: 330px;
 }
 
 .timeline-card p {
@@ -213,7 +213,6 @@ footer {
 @media only screen and (max-width: 768px) {
   .contact-us {
     margin-top: 20%;
-    text-align: center;
   }
 
   .yellow-circle {
@@ -225,6 +224,20 @@ footer {
     position: absolute;
     right: -15%;
     top: 35%;
+  }
+
+  hr {
+    width: 1px;
+    height: 270px;
+    border-left: 2px solid black;
+    float: left !important;
+  }
+
+  .timeline > div:nth-of-type(2) {
+    margin-top: 135px;
+  }
+  .timeline > div:nth-of-type(3) {
+    margin-top: 270px;
   }
   .timeline-card p {
     width: 90%;
@@ -255,9 +268,6 @@ footer {
 }
 
 @media only screen and (min-width: 769px) and (max-width: 992px) {
-  .contact-us {
-    text-align: center;
-  }
   .timeline-card p {
     width: 70%;
   }
@@ -267,5 +277,19 @@ footer {
 
   .proposal-text-wrapper {
     margin-left: 10%;
+  }
+
+  hr {
+    width: 1px;
+    height: 270px;
+    border-left: 2px solid black;
+    float: left !important;
+  }
+
+  .timeline > div:nth-of-type(2) {
+    margin-top: 135px;
+  }
+  .timeline > div:nth-of-type(3) {
+    margin-top: 270px;
   }
 }
