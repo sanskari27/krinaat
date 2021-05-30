@@ -26,6 +26,12 @@ a:link{
 }
 
 
+.yellow-text{
+  color: var(--accent);
+}
+
+
+
 .hover-popup{  
   transform: perspective(1px) translateZ(0);
   transition-duration: 0.3s;

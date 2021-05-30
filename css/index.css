@@ -30,11 +30,6 @@ p{
   padding: 0;
 }
 
-.yellow-text{
-  color: var(--accent);
-}
-
-
 /*------------------------------------ Home Section---------------------------------- */
 
 #home .red-circle{

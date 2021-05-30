@@ -51,9 +51,6 @@ p {
   padding: 0;
 }
 
-.yellow-text {
-  color: var(--accent);
-}
 
 .red-text {
   color: var(--primary);

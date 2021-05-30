@@ -48,3 +48,70 @@ p {
   margin: 0;
   padding: 0;
 }
+
+/* ---------------------------------------------Landing Wrapper--------------------------------------------- */
+.landing-wrapper {
+  margin-top: 10em;
+  text-align: center;
+  padding: 0 10%;
+}
+.landing-wrapper > img {
+  margin-top: 5em;
+  text-align: center;
+  width: 40%;
+}
+
+/* ---------------------------------------------Services Wrapper--------------------------------------------- */
+.services-wrapper {
+  margin-top: 8rem;
+  padding: 0 10%;
+}
+.services-wrapper > div {
+  margin-top: 2em;
+}
+.services-card {
+  padding: 1rem;
+  margin: 1rem;
+  z-index: 2;
+}
+.services-card > p {
+  margin-top: 1rem;
+}
+.services-card > p > img {
+  margin-right: 0.5rem;
+}
+.services-card .services-image-wrapper {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 60px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+.services-card .services-image-wrapper > img {
+  width: 90px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .landing-wrapper > img {
+    width: 80%;
+  }
+  .services-wrapper{
+    padding: 0 20%;
+  }
+  .services-card {
+    text-align: center;
+  }
+  .services-card .services-image-wrapper{
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  
+  .services-card > p {
+    text-align: start;
+    margin-left: 5%;
+  }
+}
