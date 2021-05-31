@@ -115,6 +115,9 @@ a:link{
   background: no center center;
   background-size: 100% 100%;
 }
+.navbar .navbar-toggler-icon {
+  background-image: url("/assets/menu.svg");
+}
 .navbar-brand{
     height: 45px;
 }
