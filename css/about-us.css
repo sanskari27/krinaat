@@ -26,7 +26,7 @@ h1 {
   font-family: "Montserrat";
 }
 h2 {
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 1px;
   line-height: 1.1;
   font-family: "Montserrat";
@@ -51,150 +51,91 @@ p {
 .yellow-text {
   color: var(--accent);
 }
-.content{
-  margin: 100px ;
+.content {
+  margin: 10em 0 ;
+  padding: 0 4em;
 }
 
-.content h2{
-  font-weight: 500;
-  margin-top: 125px;
-  margin-bottom: 20px;
+
+.content > div > div:nth-child(1) {
+  margin: auto;  
+}
+.content > div > div:nth-child(2) {
+  display: flex;
+  justify-content: center;  
+}
+.content > div > div:nth-child(2) > img {
+  padding: 2.5%;
+  width: 90%;
 }
 
-.brief{
-  margin-top: 75px;
-  padding: 0 10%;
+
+.brief {
+  margin-top: 3rem;
+  padding: 0 15%;
 }
 
-.brief p{
+.brief p {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 2em;
 }
 
-.image{
-  margin-left: 35%;
+.image {
+  display: flex;
+  justify-content: center;
 }
-
 .image img{
-  width: 56%;
+  width: 90%;
+}
+.teams h2 {
+  text-align: center;
 }
 
-.teams h2{
+.teams {
+  margin-top: 3em;
   text-align: center;
+}
+.team-wrapper .card-team{
+  margin-top: 2em;
+}
+
+.teams h5 {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+.teams p {
+  margin-top: 15px;
   font-weight: 500;
 }
-
-.teams .row{
-  text-align: center;
-}
-
-.teams .row p{
-  margin-top: 3%;
-  font-weight: 700;
-}
-
-.teams img{
-  
-  margin: 15% 0 2% 0;
-}
-
-.teams > div > div p:nth-of-type(2){
-  font-weight: 400;
-  margin-top: 0px;
-} 
 
 /* ------------------------------------------------------------------------------- */
 
 @media only screen and (max-width: 768px) {
+
   .content {
-    margin: -20px 0 ;
-    padding: 7%;
-    /* text-align: center; */
-  }
-
-  .content > div > div > img{
-    width: 100% ;
-    margin-top: 60px;
-  }
-
-  .content h2{
-    text-align: center;
-  }
-
-  .brief p{
-    text-align: left;
-  }
-
-  .brief{
-    padding: 0;
-    text-align: center;
+    margin: 6em 0;
+    padding: 0 2em;
   }
   
-  .image{
-    margin-left:0 ;
-    text-align: center;
+  .brief {
+    padding: 0 2em;
   }
-  .image img{
-    margin-top: 50px;
-    margin-bottom: 0;
-    width: 90%;
+  .brief p {
+    text-align: left;
   }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 992px) {
+  
   .content {
-    margin: 0 ;
-    padding: 7%;
-    /* text-align: center; */
-  }
-
-  .content > div > div > img{
-    width: 90% ;
-    margin-top: 60px;
-  }
-
-  .content h2{
-    text-align: center;
-  }
-
-  .brief p{
-    text-align: left;
-  }
-
-  .brief{
-    padding: 0;
-    text-align: center;
+    padding: 0 3em;
   }
   
-  .image{
-    margin-left:0 ;
-    text-align: center;
+  .brief {
+    padding: 0 3em;
   }
-  .image img{
-    margin-top: 50px;
-    margin-bottom: 0;
-    width: 90%;
-=======
-
-.not-found{
-  margin: 5em 0 4em;
-  width: 30%;
-  display: absolute;
-  margin-left: 35%;
-  animation: anim 10s linear infinite both;
-}
-h3{
-  text-align: center;
-}
-
-@keyframes anim{
-  0%{
-    transform: translateY(0);
+  .brief p {
+    text-align: left;
   }
-  50%{
-    transform: translateY(50px);
-  }
-  100%{
-    transform: translateY(0);
-  }
-}
+} 
