@@ -30,11 +30,6 @@ p{
   padding: 0;
 }
 
-.yellow-text{
-  color: var(--accent);
-}
-
-
 /*------------------------------------ Home Section---------------------------------- */
 
 #home .red-circle{
@@ -540,6 +535,7 @@ p{
   padding: 15px 15px 5px;
   border-radius: 15px;
   text-align: center;
+  z-index: 4;
 }
 .testimonial-card img{
   width: 90px;

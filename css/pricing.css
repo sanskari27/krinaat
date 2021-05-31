@@ -48,10 +48,6 @@ p {
   margin: 0;
   padding: 0;
 }
-.yellow-text{
-  color: var(--accent);
-}
-
 /* ----------------------------------------------------------------Plan--------------------------------------------------------------- */
 #plan{
   margin-top: 8em;
@@ -234,6 +230,7 @@ p {
   position: absolute;
   left: -35%;
   top: 95%;
+  z-index: -1;
 }
 
 footer{

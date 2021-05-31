@@ -174,5 +174,27 @@ p {
     margin-top: 50px;
     margin-bottom: 0;
     width: 90%;
+=======
+
+.not-found{
+  margin: 5em 0 4em;
+  width: 30%;
+  display: absolute;
+  margin-left: 35%;
+  animation: anim 10s linear infinite both;
+}
+h3{
+  text-align: center;
+}
+
+@keyframes anim{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(50px);
+  }
+  100%{
+    transform: translateY(0);
   }
 }
