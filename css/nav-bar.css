@@ -106,15 +106,7 @@ a:link{
   border-color: transparent;
   outline: none;
 }
-.navbar .navbar-toggle-icon {
-  display: inline-block;
-  width: 1.5em;
-  height: 1.5em;
-  vertical-align: middle;
-  content: "";
-  background: no center center;
-  background-size: 100% 100%;
-}
+
 .navbar .navbar-toggler-icon {
   background-image: url("/assets/menu.svg");
 }
