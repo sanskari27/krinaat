@@ -70,48 +70,55 @@ p{
   left:45%;
   top: 200px;
   z-index: -1;
-  animation: grp-1-anim 16s linear 0.5s infinite  both;
+  -webkit-animation: grp-1-anim 16s linear 0.5s infinite  both;
+          animation: grp-1-anim 16s linear 0.5s infinite  both;
 }
 #home .right-3{
   position: absolute;
   right:70px;
   top: 300px;
-  animation: grp-1-anim 10s linear 0.9s infinite  both;
+  -webkit-animation: grp-1-anim 10s linear 0.9s infinite  both;
+          animation: grp-1-anim 10s linear 0.9s infinite  both;
 }
 #home .right-4{
   position: absolute;
   left:70px;
   bottom: 150px;
   z-index: -1;
-  animation: grp-1-anim 15s linear 1s infinite  both;
+  -webkit-animation: grp-1-anim 15s linear 1s infinite  both;
+          animation: grp-1-anim 15s linear 1s infinite  both;
 }
 #home .right-5{
   position: absolute;
   right:20%;
   bottom: 50px;
   z-index: -1;
-  animation: grp-1-anim 12s linear 1.3s infinite  both;
+  -webkit-animation: grp-1-anim 12s linear 1.3s infinite  both;
+          animation: grp-1-anim 12s linear 1.3s infinite  both;
 }
 #home .left-1{
   position: absolute;
   left: 60px;
   top: 90px;
   z-index: -1;
-  animation: grp-2-anim 15s linear infinite  both;
+  -webkit-animation: grp-2-anim 15s linear infinite  both;
+          animation: grp-2-anim 15s linear infinite  both;
 }
 #home .left-2{
   position: absolute;
   left:25%;
   top: 150px;
   z-index: -1;
-  animation: grp-2-anim 16s linear 0.5s infinite  both;
+  -webkit-animation: grp-2-anim 16s linear 0.5s infinite  both;
+          animation: grp-2-anim 16s linear 0.5s infinite  both;
 }
 #home .left-3{
   position: absolute;
   right:32%;
   top: 130px;
   z-index: -1;
-  animation: grp-2-anim 18s linear 0.9s infinite  both;
+  -webkit-animation: grp-2-anim 18s linear 0.9s infinite  both;
+          animation: grp-2-anim 18s linear 0.9s infinite  both;
 }
 #home .left-4{
   position: absolute;
@@ -171,7 +178,19 @@ p{
 
 .right-arrow{
   margin-left: 20px;
-  animation: left-right 2s linear infinite  both;
+  -webkit-animation: left-right 2s linear infinite  both;
+          animation: left-right 2s linear infinite  both;
+}
+@-webkit-keyframes left-right {
+  0% {
+    margin-left: 20px;
+  }
+  50% {
+    margin-left: 26px;
+  }
+  100% {
+    margin-left: 20px;
+  }
 }
 @keyframes left-right {
   0% {
@@ -183,6 +202,33 @@ p{
   100% {
     margin-left: 20px;
   }
+}
+@-webkit-keyframes grp-1-anim {
+  0% {
+    transform: translate(0,0);
+  }
+  16% {
+    transform: translate(-20px,0);
+  }
+  32% {
+    transform: translate(25px,15px);
+  }
+  48% {
+    transform: translate(30px,-23px);
+  }
+  64% {
+    transform: translate(-30px,0);
+  }
+  80% {
+    transform: translate(27px,25px);
+  }
+  96% {
+    transform: translate(14px,0);
+  }
+  100% {
+    transform: translate(0px , 0px);
+  }
+  
 }
 @keyframes grp-1-anim {
   0% {
@@ -205,6 +251,33 @@ p{
   }
   96% {
     transform: translate(14px,0);
+  }
+  100% {
+    transform: translate(0px , 0px);
+  }
+  
+}
+@-webkit-keyframes grp-2-anim {
+  0% {
+    transform: translate(0,0);
+  }
+  16% {
+    transform: translate(0,-20px);
+  }
+  32% {
+    transform: translate(15px,25px);
+  }
+  48% {
+    transform: translate(-23px,-30px);
+  }
+  64% {
+    transform: translate(0,-30px);
+  }
+  80% {
+    transform: translate(25px,27px);
+  }
+  96% {
+    transform: translate(0,14px);
   }
   100% {
     transform: translate(0px , 0px);
@@ -259,7 +332,8 @@ p{
   padding: 10% 0 ;
   background-color: #fff;
   box-shadow:  0 0 20px #373b3d57;
-  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+          backdrop-filter: blur(25px);
 }
 .feature-card .feature-header{
   margin: 20px;
@@ -467,6 +541,8 @@ p{
   margin-bottom: 70px;
 }
 .plan-card{
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   padding: 20px 20px 0;
   margin: 30px 15px;
@@ -648,13 +724,15 @@ p{
     position: absolute;
     left:-20px;
     top: 150px;
-    animation: grp-2-anim 16s linear 0.5s infinite  both;
+    -webkit-animation: grp-2-anim 16s linear 0.5s infinite  both;
+            animation: grp-2-anim 16s linear 0.5s infinite  both;
   }
   #home .left-3{
     position: absolute;
     right:32%;
     top: 50px;
-    animation: none;
+    -webkit-animation: none;
+            animation: none;
   }
   #home .left-4{
     visibility: hidden;
@@ -678,7 +756,35 @@ p{
     bottom: 0px;
     top: 105%;
     width: 30px;
-    animation: grp-2-anim 30s linear 0.5s infinite  both;
+    -webkit-animation: grp-2-anim 30s linear 0.5s infinite  both;
+            animation: grp-2-anim 30s linear 0.5s infinite  both;
+  }
+
+  @-webkit-keyframes grp-1-anim {
+    0% {
+      transform: translate(0,0);
+    }
+    16% {
+      transform: translate(-10px,-15px);
+    }
+    32% {
+      transform: translate(-30px,-5px);
+    }
+    48% {
+      transform: translate(-10px,10px);
+    }
+    64% {
+      transform: translate(-5px,20px);
+    }
+    80% {
+      transform: translate(-10px,10px);
+    }
+    96% {
+      transform: translate(-5px,5px);
+    }
+    100% {
+      transform: translate(0,0);
+    }
   }
 
   @keyframes grp-1-anim {
@@ -865,13 +971,15 @@ p{
     position: absolute;
     left:-20px;
     top: 150px;
-    animation: grp-2-anim 16s linear 0.5s infinite  both;
+    -webkit-animation: grp-2-anim 16s linear 0.5s infinite  both;
+            animation: grp-2-anim 16s linear 0.5s infinite  both;
   }
   #home .left-3{
     position: absolute;
     right:32%;
     top: 50px;
-    animation: none;
+    -webkit-animation: none;
+            animation: none;
   }
   #home .left-4{
     visibility: hidden;
@@ -895,7 +1003,35 @@ p{
     bottom: 0px;
     top: 105%;
     width: 30px;
-    animation: grp-2-anim 30s linear 0.5s infinite  both;
+    -webkit-animation: grp-2-anim 30s linear 0.5s infinite  both;
+            animation: grp-2-anim 30s linear 0.5s infinite  both;
+  }
+
+  @-webkit-keyframes grp-1-anim {
+    0% {
+      transform: translate(0,0);
+    }
+    16% {
+      transform: translate(-10px,-15px);
+    }
+    32% {
+      transform: translate(-30px,-5px);
+    }
+    48% {
+      transform: translate(-10px,10px);
+    }
+    64% {
+      transform: translate(-5px,20px);
+    }
+    80% {
+      transform: translate(-10px,10px);
+    }
+    96% {
+      transform: translate(-5px,5px);
+    }
+    100% {
+      transform: translate(0,0);
+    }
   }
 
   @keyframes grp-1-anim {

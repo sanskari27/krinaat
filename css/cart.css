@@ -53,10 +53,23 @@ p {
   width: 30%;
   display: absolute;
   margin-left: 35%;
-  animation: anim 10s linear infinite both;
+  -webkit-animation: anim 10s linear infinite both;
+          animation: anim 10s linear infinite both;
 }
 h2{
   text-align: center;
+}
+
+@-webkit-keyframes anim{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(50px);
+  }
+  100%{
+    transform: translateY(0);
+  }
 }
 
 @keyframes anim{
